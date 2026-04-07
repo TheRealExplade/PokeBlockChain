@@ -1,36 +1,13 @@
-# Blockchain-Based Trading Card Game Backend
+# Sample Hardhat Project
 
-## Overview
-This project is a backend for a turn-based trading card game where each card is treated as a blockchain asset (NFT).
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
-## Features
-- Turn-based battle system
-- Deck management
-- Card stats (attack, defense, HP)
-- Matchmaking system
-- Mock blockchain integration (ready for smart contract integration)
+Try running some of the following tasks:
 
-## Tech Stack
-- Node.js
-- Express.js
-- Ethers.js (for blockchain integration)
-
-## API Endpoints
-
-### Create Match
-POST /api/game/create
-
-### Start Match
-POST /api/game/start
-
-### Attack
-POST /api/game/attack
-
-### Get Cards
-GET /api/cards/:address
-
-## Setup
-
-```bash
-npm install
-node server.js
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat ignition deploy ./ignition/modules/Lock.js
+```
