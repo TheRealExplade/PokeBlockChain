@@ -1,0 +1,61 @@
+[
+  {
+    "inputs": [{ "name": "user", "type": "address" }],
+    "name": "getUserCards",
+    "outputs": [
+      {
+        "components": [
+          { "name": "cardId", "type": "uint256" },
+          { "name": "name", "type": "string" },
+          { "name": "attack", "type": "uint256" },
+          { "name": "defense", "type": "uint256" },
+          { "name": "rarity", "type": "string" }
+        ],
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "cardId", "type": "uint256" }],
+    "name": "buyCard",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "name": "matchId", "type": "uint256" },
+      { "name": "winner", "type": "address" }
+    ],
+    "name": "submitMatchResult",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRandomNumber",
+    "outputs": [{ "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "cardId", "type": "uint256" }],
+    "name": "getCard",
+    "outputs": [
+      {
+        "components": [
+          { "name": "name", "type": "string" },
+          { "name": "attack", "type": "uint256" },
+          { "name": "defense", "type": "uint256" },
+          { "name": "hp", "type": "uint256" }
+        ],
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
